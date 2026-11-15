@@ -228,6 +228,17 @@ export default function Dashboard() {
 
                 </div>
             </main>
+            <footer className="mt-16 py-6 border-t border-slate-200">
+                <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <p className="text-sm text-slate-500">
+                        © {new Date().getFullYear()} Проект «Решись Авиа»
+                    </p>
+                    <p className="text-sm text-slate-500">
+                        Разработано:{' '}
+                        <span className="font-medium text-slate-700">Жарков Артём</span>
+                    </p>
+                </div>
+            </footer>
         </div>
     );
 }

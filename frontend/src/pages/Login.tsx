@@ -21,7 +21,7 @@ export default function Login() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-slate-100 px-4">
+        <div className="min-h-screen flex items-center justify-center bg-slate-100 px-4 relative">
             <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 space-y-6">
                 <div className="text-center space-y-2">
                     <div className="inline-flex items-center justify-center p-3 bg-brand-50 rounded-full mb-2">
@@ -70,6 +70,10 @@ export default function Login() {
                         Зарегистрироваться
                     </Link>
                 </p>
+            </div>
+            <div className="absolute bottom-6 text-center text-sm text-slate-400 w-full left-0">
+                <p>© {new Date().getFullYear()} Проект «Решись Авиа»</p>
+                <p className="mt-1">Разработано: <span className="font-medium text-slate-500">Жарков Артём</span></p>
             </div>
         </div>
     );
