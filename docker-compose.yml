@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    container_name: reshis_avia_backend
+    ports:
+    - "8000:8000"
+    volumes:
+    - ./backend/app.db:/app/app.db
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: reshis_avia_frontend
+    ports:
+    - "80:80"
+    depends_on:
+    - backend
+    restart: always
